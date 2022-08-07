@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #Base
+\*------------------------------------*/
+
+.item-video {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .item__controls {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn {
+    width: 50%
+  }
+
+  iframe {
+    display: block
+  }
+}
+
+
+// #form-video {
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: max-height .75s ease-in-out;
+// }
+//
+// #form-video.visible {
+//   max-height: 1000px
+// }
+//
+// #form-photo {
+//   min-height: 0;
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: max-height .75s ease-in-out;
+// }
+//
+// #form-photo.visible {
+//   max-height: 1000px
+// }
+//
+// .nav-buttons {
+//   display: flex;
+//   height: 62px;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+// .u-relative {
+//   position: relative
+// }

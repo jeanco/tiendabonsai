@@ -1,0 +1,87 @@
+@include component('btn-share') {
+  $size: 1.75em;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $size;
+  height: $size;
+  margin-right: .45rem;
+  text-align: center;
+  font-size: 17px;
+  transition: all .3s ease;
+  text-decoration: none;
+  background-color: $global-color-text;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:hover {
+    background-color: darken($global-color-text, 10%);
+  }
+
+  &--facebook {
+    background-color: $global-color-facebook;
+    &:hover {
+      background-color: darken($global-color-facebook, 10%);
+    }
+  }
+  &--twitter {
+    background-color: $global-color-twitter;
+    &:hover {
+      background-color: darken($global-color-twitter, 10%);
+    }
+  }
+  &--whatsapp {
+    background-color: $global-color-whatsapp;
+    &:hover {
+      background-color: darken($global-color-whatsapp, 10%);
+    }
+  }
+  &--gplus {
+    background-color: $global-color-google;
+    &:hover {
+      background-color: darken($global-color-google, 10%);
+    }
+  }
+  &--google {
+    background-color: $global-color-google;
+    &:hover {
+      background-color: darken($global-color-google, 10%);
+    }
+  }
+  &--google_plus {
+    background-color: $global-color-google;
+    &:hover {
+      background-color: darken($global-color-google, 10%);
+    }
+  }
+  &--vimeo {
+    background-color: $global-color-vimeo;
+    &:hover {
+      background-color: darken($global-color-vimeo, 10%);
+    }
+  }
+  &--soundcloud {
+    background-color: $global-color-soundcloud;
+    &:hover {
+      background-color: darken($global-color-soundcloud, 10%);
+    }
+  }
+  &--linkedin {
+    background-color: $global-color-linkedin;
+    &:hover {
+      background-color: darken($global-color-linkedin, 10%);
+    }
+  }
+  &--instagram {
+    background: linear-gradient(to top, #da953d 0%, #c14c4d 30%, #bc1975 60%, #7024be);
+    &:hover {
+      // background: linear-gradient(darken(#da953d,5%) 0%, darken(#c14c4d,5%) 30%, darken(#bc1975,5%) 60%, darken(#7024be,5);
+    }
+  }
+  &:last-child {
+    margin-right: 0
+  }
+}
+

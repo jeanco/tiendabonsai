@@ -1,0 +1,28 @@
+@include component('table-order') {
+  flex-direction: column;
+  min-width: 500px;
+  width: 100%;
+  border-bottom: 2px solid $global-color-primary;
+
+  tr {
+    border-bottom: 2px solid rgba($global-color-primary, .25);
+    &:last-child {
+      border-bottom-width: 0
+    }
+  }
+
+  th {
+    padding: .8rem;
+    line-height: 1.2;
+    border-bottom: 2px solid rgba($global-color-primary, .25);
+  }
+
+  td {
+    padding: 2rem .8rem;
+    line-height: 1.2;
+  }
+
+  th {
+    text-align: center;
+  }
+}

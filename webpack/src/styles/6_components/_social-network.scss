@@ -1,0 +1,84 @@
+@include component('social-network') {
+  $list: (
+    'facebook': $global-color-facebook,
+    'google': $global-color-google,
+    'twitter': $global-color-twitter,
+    'instagram': $global-color-instagram,
+    'youtube': $global-color-youtube
+  );
+  --icon-height: 50px;
+  --margin-side: .75rem;
+  margin-left: calc(var(--margin-side) * -0.5);
+  margin-right: calc(var(--margin-side) * -0.5);
+  display: flex;
+
+  @include mq($until: laptop) {
+    flex-wrap: wrap;
+  }
+
+  @include mq($from: laptop) {
+    --icon-height: 96px;
+  }
+
+  @include element('info') {
+    min-height: var(--icon-height);
+    margin-top: 0;
+    color: white;
+    background-color: $global-color-secondary;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: .25rem;
+    margin-top: .25rem;
+    margin-left: calc(var(--margin-side) / 2);
+    margin-right: calc(var(--margin-side) / 2);
+
+    @include mq($until: laptop) {
+      width: 100%
+    }
+
+    >p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @include element('link') {
+    // width: calc(50% - var(--margin-side));
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    margin-left: calc(var(--margin-side) / 2);
+    margin-right: calc(var(--margin-side) / 2);
+    display: block;
+    border-radius: 4px;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    line-height: var(--icon-height);
+    width: calc(19.9% - var(--margin-side));
+
+    @include mq($until: tablet) {
+      font-size: 20px;
+    }
+
+    @include mq($from: laptop) {
+      width: 154px;
+    }
+
+    &:not(:hover) {
+      color: $global-color-text;
+      background-color: darken($global-color-quinary, 15%);
+    }
+  }
+
+  @each $prop, $val in $list {
+    &--#{$prop} {
+      color: white;
+      background-color: $val;
+    }
+  }
+}

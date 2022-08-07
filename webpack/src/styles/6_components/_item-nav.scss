@@ -1,0 +1,24 @@
+@include component('item-nav') {
+  border-bottom: 1px solid $global-border-color;
+  // display: flex;
+  // justify-content: center;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+
+  @include element('button') {
+    transition: border-color .3s ease;
+    position: relative;
+    top: 1px;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: $global-color-text;
+    font-weight: bold;
+    border-color: transparent;
+    min-width: 102px;
+    line-height: 2rem;
+
+    &.is-active {
+      border-color: $global-border-color $global-border-color white $global-border-color;
+    }
+  }
+}

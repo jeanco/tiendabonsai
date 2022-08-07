@@ -1,0 +1,54 @@
+@include component('btn') {
+  font-weight: bold;
+  padding: .7rem 1.85rem;
+  border-radius: 20px;
+  // line-height: 1;
+  font-size: 15px;
+  color: white;
+  transition: background .3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+
+  &:disabled,
+  &.is-disabled {
+    opacity: .85;
+    cursor: no-drop;
+    background-color: $global-color-text;
+    border-color: darken($global-color-text, 5%);
+
+    &:hover {
+      background-color: $global-color-text;
+    }
+  }
+  @include modifier('default') {
+    @extend .c-btn;
+    background-color: $global-color-text;
+  }
+
+  @include modifier('primary') {
+    @extend .c-btn;
+    background-color: $global-color-primary;
+    &:hover {
+      background-color: $global-color-secondary;
+      // background-color: darken($global-color-primary, 10%);
+    }
+  }
+
+  @include modifier('secondary') {
+    @extend .c-btn;
+    background-color: $global-color-secondary;
+    &:hover {
+      background-color: $global-color-primary;
+    }
+  }
+
+  @include modifier('whatsapp') {
+    @extend .c-btn;
+    background-color: $global-color-whatsapp;
+    &:hover {
+      background-color: darken($global-color-whatsapp, 10%);
+    }
+  }
+}

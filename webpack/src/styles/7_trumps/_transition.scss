@@ -1,0 +1,19 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter .c-mini-cart__container,
+.fade-leave-to .c-mini-cart__container {
+  transform: translateX(100%);
+}
+
+.fade-enter .c-modal__container,
+.fade-leave-active .c-modal__container {
+  transform: scale(.85);
+}

@@ -1,0 +1,22 @@
+@include component('input-circle') {
+  $input-size: 35px;
+  background-color: white;
+  border-radius: 20px;
+  line-height: $input-size;
+  border-radius: $input-size / 2;
+  padding: 0 1.25rem;
+  border: 1px solid white;
+
+  &[type='submit'] {
+    padding: 0 1.5rem;
+    background-color: $global-color-primary;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:disabled {
+      // background-color: darken($global-border-color, 40%);
+      cursor: no-drop;
+    }
+  }
+}

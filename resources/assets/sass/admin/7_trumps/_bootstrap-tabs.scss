@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  #Bootstrap Tabs
+\*------------------------------------*/
+
+.tab-content {
+  border-top: 1px solid $global-color-primary;
+  position: relative;
+
+  .tab-content {
+    padding: 0 1rem;
+    border-top: 0;
+  }
+}
+
+.tab-wrapper {
+  background-color: white;
+  margin: 1.5rem 0;
+}
+
+.nav-tabs {
+  border: 0
+}
+
+.nav-tabs>li>a {
+  margin: 0;
+  border: 0;
+  border-radius: 0
+}
+
+.c-header__nav {
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background: $global-color-primary;
+    color: white;
+    border: 0
+  }
+
+  .nav-tabs {
+    overflow: hidden;
+  }
+
+  .nav-tabs>li>a {
+    color: darken($global-color-tertiary, 10%);
+    border-radius: 0
+  }
+}

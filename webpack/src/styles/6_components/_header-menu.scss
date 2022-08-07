@@ -1,0 +1,107 @@
+@include component('header-menu') {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  background-color: $global-color-quinary;
+
+  @include element('category') {
+    list-style: none;
+    &.is-active,
+    &:hover {
+      > .c-header-menu__category-button {
+        background-color: $global-color-primary;
+        color: white;
+      }
+      >.c-header-menu__subcategories {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+
+  @include element('category-button') {
+    display: flex;
+    width: 100%;
+    padding: 7px 2rem;
+    align-items: center;
+    font-weight: bold;
+    color: $global-color-primary;
+  }
+
+
+  @include element('category-image') {
+    $size-image: 35px;
+    height: $size-image;
+    width: $size-image;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    > img {
+      // height: 15px;
+      // width: 15px;
+      object-fit: cover;
+    }
+  }
+
+  @include element('category-name') {
+    flex: 1;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1;
+  }
+
+  @include element('subcategories') {
+    position: absolute;
+    left: 100%;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: darken($global-color-quinary, 5%);
+    padding-left: 0;
+    min-width: 300px;
+    top:0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+
+  @include element('subcategory') {
+    list-style: none;
+  }
+
+  @include element('subcategory-link') {
+    padding: 15px 2rem;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: $global-color-primary;
+    transition: all .2s ease;
+    @include mq($from: tablet) {
+      color: $global-color-text;
+    }
+    &:hover {
+      background-color: $global-color-secondary;
+      color: white;
+    }
+  }
+
+  @include element('subcategory-image') {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    min-width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    >img {
+      height: 90%;
+      widows: 90%;
+      object-fit: cover;
+    }
+  }
+}

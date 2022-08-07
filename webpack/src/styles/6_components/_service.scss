@@ -1,0 +1,34 @@
+@include component('service') {
+  @include mq($from: tablet) {
+    display: flex;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba($global-border-color, .5);
+  }
+
+  @include element('title') {
+    text-transform: uppercase;
+    color: $global-color-primary;
+    margin-top: 1rem;
+    font-size: 25px;
+    margin-bottom: .75rem;
+    @include mq($from: mobile) {
+      width: 70%;
+    }
+  }
+
+  @include element('image') {
+    max-height: 200px;
+  }
+
+  @include element('description') {
+    flex: 1;
+
+    ul, ol {
+      padding-left: 1.18rem;
+    }
+  }
+}

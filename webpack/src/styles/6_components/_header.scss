@@ -1,0 +1,135 @@
+@include component('header') {
+  // --header-height: 50px;
+  // --header-height-responsive: 50px;
+  // $header-height: 50px;
+  height: var(--header-height);
+  z-index: 100;
+
+  // @include mq($from: tablet) {
+  //   --header-height: 75px;
+  // }
+
+  @include element('content') {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: white;
+    justify-content: space-between;
+    z-index: 10;
+    border-bottom: 1px solid $global-color-quinary;
+  }
+
+
+  @include element('logo') {
+    > img {
+      height: calc(calc(var(--header-height) / 2) - 2px);
+    }
+  }
+
+
+  @include element('menu') {
+    position: fixed;
+    top: var(--header-height);
+    overflow-y: auto;
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    z-index: 10;
+  }
+
+
+  @include element('button') {
+    font-size: 17px;
+    margin-left: 13px;
+    padding: 0;
+    color: $global-color-primary;
+    @include mq($from: tablet) {
+      font-size: 24px;
+    }
+  }
+
+
+  @include element('search') {
+    display: flex;
+  }
+
+  @include element('search-button') {
+    border-radius: 20px 0 0 20px;
+    background-color: $global-color-primary;
+    color: white;
+    font-weight: bold;
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:17px;
+    padding: .65rem .75rem .65rem 1.5rem;
+    line-height: 1;
+
+    >.u-icon {
+      font-size: 12px;
+    }
+  }
+
+  @include element('search-input') {
+    border-radius: 0 20px 20px 0;
+    background-color: $global-color-quinary;
+    display: flex;
+    align-items: center;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    font-size: 14px;
+    width: 100%;
+
+    >input{
+      flex:1;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    >.u-icon {
+      color: $global-color-text;
+    }
+  }
+
+  @include element('link') {
+    text-decoration: none;
+    line-height: 1;
+    font-weight: bold;
+    border-right: 1px solid $global-border-color;
+    padding-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+
+    >.u-icon {
+      font-size: 22px;
+      margin-right: .25rem;
+    }
+  }
+
+  @include element('cart') {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+
+    &:after {
+      $size: 20px;
+      border: 2px solid white;
+      content: attr(data-cart);
+      font-size: 10px;
+      color: white;
+      width: $size;
+      height: $size ;
+      line-height: $size - 4px;
+      border-radius: 50%;
+      background-color: $global-color-secondary;
+      display: block;
+      font-weight: bold;
+      position: absolute;
+      top: (-$size + 4px) / 2;
+      right: (-$size + 4px) / 2;
+    }
+  }
+}

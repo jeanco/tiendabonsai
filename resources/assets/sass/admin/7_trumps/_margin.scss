@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  #MARGIN
+\*------------------------------------*/
+
+@each $space-number, $space-value in $wocss-spaces {
+  @include utility('m' + $space-number) { margin: $space-value; }
+  @include utility('mt' + $space-number) { margin-top: $space-value; }
+  @include utility('mr' + $space-number) { margin-right: $space-value; }
+  @include utility('mb' + $space-number) { margin-bottom: $space-value; }
+  @include utility('ml' + $space-number) { margin-left: $space-value; }
+
+  @include utility('my' + $space-number) {
+    margin-top:    $space-value;
+    margin-bottom: $space-value;
+  }
+  @include utility('mx' + $space-number) {
+    margin-left:  $space-value;
+    margin-right: $space-value;
+  }
+}
+
+@include utility('m0') { margin: 0; }
+@include utility('mt0') { margin-top: 0; }
+@include utility('mr0') { margin-right: 0; }
+@include utility('mb0') { margin-bottom: 0; }
+@include utility('ml0') { margin-left: 0; }
+
+@include utility('ml-auto') { margin-left: auto }
+@include utility('mr-auto') { margin-right: auto }
+
+@include utility('mx-auto') {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,171 @@
+/* ----------- Carousel ----------- */
+
+
+/* ----------- Carousel Navs ----------- */
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+  &:hover {
+    color: darken($global-color-primary, 20%)
+  }
+}
+
+.item__controls {
+  width: 100%;
+  display: flex;
+
+  .btn {
+    border-radius: 0;
+    font-weight: bold;
+  }
+}
+
+.owl-nav {
+  width: calc(100% + 6.2rem);
+  display: flex;
+  left: -3.2rem;
+  position: absolute;
+  justify-content: space-between;
+  top: 42%;
+  color: $global-color-secondary;
+  z-index: -1;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled {
+  color: rgba($global-color-secondary, .5);
+  &:hover {
+    color: rgba($global-color-secondary, .5) !important
+  }
+}
+
+.owl-carousel {
+  .glyphicon {
+    font-size: 3rem;
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none
+  }
+}
+
+.owl-carousel img {
+  transform-style: flat !important;
+}
+
+
+/* ----------- Carousel Video ----------- */
+.owl-carousel--item .item-video{
+  height:100px;
+}
+
+.item__category {
+  border: 1px solid #989898;
+}
+
+.owl-carousel--image {
+  margin-top: .75rem;
+
+  img {
+    width: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .owl-nav {
+    color: $global-color-primary;
+  }
+
+  .item__content {
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .item__photo {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .item__controls {
+      height: 100%;
+      background: rgba(black, .5);
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      left: 0;
+    }
+
+    .glyphicon {
+      font-size: 1.25rem;
+    }
+
+    .btn {
+      border-radius: 3px;
+    }
+
+
+  }
+}
+
+.item-video {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .item__controls {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn {
+    width: 50%
+  }
+
+  iframe {
+    display: block
+  }
+}
+
+.item-account {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .item__controls {
+    width: 100%;
+    display: flex;
+  }
+
+  .item-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: rgba($global-color-tertiary, .035)
+  }
+
+  .btn {
+    width: 33.3%
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

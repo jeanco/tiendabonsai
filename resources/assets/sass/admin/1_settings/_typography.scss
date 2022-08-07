@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  #Typography
+\*------------------------------------*/
+
+// Font Family
+
+$global-font-family: 'Ubuntu', serif;
+
+
+// Font Sizes
+
+$global-fz-h00: 4rem !default;
+$global-fz-h0 : 3.5rem !default;
+$global-fz-h1 : 3.125rem !default;
+$global-fz-h2 : 2rem !default;
+$global-fz-h3 : 1.5rem !default;
+$global-fz-h4 : 1.16rem !default;
+$global-fz-h5 : 1.1rem !default;
+$global-fz-h6 : $global-fz-h4 !default;
+
+$wocss-font-sizes: (
+  'h00': $global-fz-h00,
+  'h0' : $global-fz-h0,
+  'h1' : $global-fz-h1,
+  'h2' : $global-fz-h2,
+  'h3' : $global-fz-h3,
+  'h4' : $global-fz-h4,
+  'h5' : $global-fz-h5,
+  'h6' : $global-fz-h6
+) !default;
+
+// Font Weights
+
+$global-fw-x-bold : 800 !default;
+$global-fw-bold   : 700 !default;
+$global-fw-s-bold : 600 !default;
+$global-fw-regular: 400 !default;
+$global-fw-light  : 300 !default;
+
+$wocss-font-weights: (
+  'x-bold'  : $global-fw-x-bold,
+  'bold'    : $global-fw-bold,
+  's-bold'  : $global-fw-s-bold,
+  'regular' : $global-fw-regular,
+  'light'   : $global-fw-light
+) !default;

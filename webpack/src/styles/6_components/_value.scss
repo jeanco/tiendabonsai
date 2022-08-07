@@ -1,0 +1,24 @@
+@include component('value') {
+  box-shadow: 0 6px 16px rgba(92, 91, 91, 0.171);
+  padding: 0 2.5rem 1.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+
+  @include element('image') {
+    $size: 70px;
+    margin-top: -0.5 * $size;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    padding: .25rem;
+    box-shadow: 0 4px 15px rgba(78, 78, 78, 0.171);
+    margin-bottom: 1.5rem;
+    >img {
+      max-height: 100%;
+    }
+  }
+
+  @include mq($from: tablet) {
+    width: 47%;
+  }
+}

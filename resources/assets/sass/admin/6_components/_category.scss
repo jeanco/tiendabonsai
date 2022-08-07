@@ -1,0 +1,158 @@
+@include component('category') {
+  border-top: 1px solid $global-color-border;
+  flex-wrap: wrap;
+  position: relative;
+
+
+  @include element('dropdown') {
+    background-color: white;
+    border-right: 1px solid $global-color-border;
+    border: 0;
+    color: $global-color-tertiary;
+    height: 60px !important;
+    outline: none;
+    padding: 0 3.5rem 0 2.5rem;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+
+
+  @include element('name') {
+    min-width: 150px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.9rem;
+    text-align: left;
+    transition: all .3s ease;
+    font-weight: 500;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      color: $global-color-tertiary;
+    }
+  }
+
+
+  @include element('item') {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2.25rem 4rem;
+    transition: background-color .5s ease;
+
+    span {
+      color: white;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: darken($global-color-primary, 10%);
+      text-decoration: none;
+    }
+  }
+
+
+  @include element('container') {
+    background-color: white;
+    border: 1px solid $global-color-border;
+    opacity: 0;
+    padding-left: 0;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    max-width: 100%;
+    z-index: 3;
+
+    @include to(md) {
+      width: 100%;
+    }
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
+  @include element('subcategory-list') {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 0;
+
+
+    @include to(md) {
+      width: 100%;
+      transition: all .5s ease-in-out;
+    }
+
+    @include from(md) {
+      background-color: white;
+      left: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+
+  @include element('subcategory') {
+    align-items: flex-start;
+    border-bottom: 1px solid $global-color-border;
+    display: flex;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    @include to(md) {
+      padding-left: 4rem;
+    }
+
+    p {
+      min-width: 140px;
+      cursor: pointer;
+      margin-right: 1.5rem;
+    }
+  }
+
+
+
+  @include element('mask') {
+    background-color: rgba(#000000, 0.52);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    pointer-events:none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+
+    &.is-show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  @include state('active') {
+    .c-category__subcategory-list {
+      max-height: 100vh;
+      border-top: 1px solid darken($global-color-border, 10%);
+      border-bottom: 1px solid darken($global-color-border, 10%);
+
+      @include from(md) {
+        border: 1px solid $global-color-border;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@include component('btn-nav') {
+  $size: 34px;
+  line-height: $size;
+  background-color: rgba($global-color-text, .75);
+  font-size: 11px;
+  color: white;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  transition: all .3s ease;
+  min-width: $size;
+  border: 1px solid transparent;
+  display: inline-block;
+  &:hover {
+    background-color: $global-color-text;
+    border-color: $global-color-text
+    // background-color: $global-color-primary;
+    // border-color: $global-color-primary
+  }
+  >i {
+    display: block;
+  }
+
+  @include modifier('white') {
+    background-color: transparent;
+    border-color: white;
+
+    &:hover {
+      background-color: $global-color-secondary;
+      border-color: $global-color-secondary
+    }
+  }
+
+  @include modifier('prev') {
+    left: 7.5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  @include modifier('next') {
+    right: 7.5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  @include modifier('secondary') {
+    &.c-btn-nav--prev {
+      left: 3.75%;
+    }
+    &.c-btn-nav--next {
+      right: 3.75%;
+    }
+  }
+}

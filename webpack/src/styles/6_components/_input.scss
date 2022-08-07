@@ -1,0 +1,29 @@
+@include component('input') {
+  position: relative;
+
+  >input,
+  >select,
+  >textarea {
+    background-color: $global-color-quinary;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid $global-color-quinary;
+    padding: .594rem .75rem;
+  }
+
+  >select {
+    padding-right: 2rem;
+    padding-left: .75rem;
+    appearance: none;
+
+    +.u-icon {
+      position: absolute;
+      right: .75rem;
+      top: 50%;
+      font-size: .9rem;
+      color: $global-color-text;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}

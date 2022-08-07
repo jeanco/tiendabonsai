@@ -1,0 +1,92 @@
+@include component('item') {
+  position: relative;
+  border-radius: 5px;
+  transition: box-shadow .3s ease;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 2px 2px 4px 4px rgba(39, 39, 39, 0.116);
+  }
+
+  @include element('info') {
+    padding: 1.15rem;
+
+    @include mq($from: laptop) {
+      padding: 1.5rem;
+    }
+  }
+
+  @include element('name') {
+    // text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+
+    @include mq($until: tablet) {
+      font-size: 13px;
+    }
+  }
+
+  @include element('link') {
+    text-decoration: none;
+    color: $global-color-default;
+    // font-weight: bold;
+  }
+
+  @include element('image') {
+    margin: 0;
+    display: block;
+    position: relative;
+
+    >img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @include element('image-load') {
+    // min-height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding-top: calc(50% - 14px);
+    padding-bottom: calc(50% - 14px);
+  }
+
+  @include element('current-price') {
+    font-size: 24px;
+    font-weight: bold;
+    //display: inline;
+    margin-right: 1rem;
+    color: $global-color-tertiary;
+  }
+
+  @include element('previous-price') {
+    display: inline;
+    font-size: 14px;
+    color: $global-color-text;
+    text-decoration: line-through;
+  }
+
+  @include element('discount-price') {
+    color: $global-color-tertiary;
+    font-weight: bold;
+    margin-top: .5rem;
+  }
+
+  @include element('promotion') {
+    $size: 64px;
+    position: absolute;
+    // top: $size / 2;
+    // right: $size / 2;
+    top: -$size / 4;
+    right: -$size / 4;
+
+    >img {
+      width: $size;
+      height: $size;
+      padding-top: 12px;
+      padding-right: 10px;
+    }
+  }
+}

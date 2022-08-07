@@ -1,0 +1,14 @@
+@include object('wrapper') {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include to(lg) {
+    width: 85%
+  }
+
+  @include to(md) {
+    width: 90%
+  }
+}

@@ -1,0 +1,55 @@
+/* -------- Wysihtml5 --------- */
+
+.wysihtml5-sandbox {
+  background: rgba(133, 131, 131, 0.0470588) !important;
+  width: 100% !important;
+  min-height: 150px;
+}
+
+body.form-control.wysihtml5-editor {
+  background: red !important
+}
+
+
+.wysihtml5-toolbar {
+  .btn-default {
+    background: $global-color-primary;
+    border: 0;
+    padding: .25rem .75rem;
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken($global-color-primary, 10%) !important;
+    }
+
+    &.wysihtml5-command-active {
+      background: darken($global-color-primary, 20%) !important;
+    }
+  }
+
+  .dropdown.open {
+    .btn-default,
+    .btn-default:hover,
+    .btn-default:active {
+      background: darken($global-color-primary, 10%)  ;
+      color: white;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+
+    a {
+      padding: 5px 20px;
+    }
+  }
+
+  a[data-wysihtml5-command-value='p'],
+  a[data-wysihtml5-command-value='h4'],
+  a[data-wysihtml5-command-value='h5'],
+  a[data-wysihtml5-command-value='h6'] {
+    padding: 0
+  }
+}

@@ -1,0 +1,26 @@
+@include component('nav') {
+  padding-left: 0;
+
+  @include element('item') {
+    --item-size: 40px;
+    font-weight: bold;
+    color: $global-color-text;
+    background-color: #f0f0f0;
+    height: var(--item-size);
+    line-height: var(--item-size);
+    width: var(--item-size);
+    transition: all .3s ease;
+    &:hover {
+      background-color: #d1d1d1;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background-color: #f0f0f0;
+    }
+    &.is-active {
+      background-color: $global-color-secondary;
+      color: white;
+    }
+  }
+}
+

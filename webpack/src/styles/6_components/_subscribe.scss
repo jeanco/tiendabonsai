@@ -1,0 +1,31 @@
+@include component('subscribe') {
+  background-color: $global-color-primary;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 1rem;
+  margin-bottom: 2rem;
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include element('form') {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  @include element('form-submit') {
+    @include mq($until: tablet) {
+      order: 1
+    }
+  }
+}

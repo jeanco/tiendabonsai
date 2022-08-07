@@ -1,0 +1,9 @@
+@include utility('bg-primary') { background-color: $global-color-primary }
+@include utility('bg-secondary') { background-color: $global-color-secondary }
+@include utility('bg-tertiary') { background-color: $global-color-tertiary }
+@include utility('bg-white') { background-color: white }
+@include utility('bg-wrapper') { background-color: $global-color-wrapper }
+
+@include utility('bg-success') { background-color: $global-color-success }
+@include utility('bg-warning') { background-color: $global-color-warning }
+@include utility('bg-danger') { background-color: $global-color-danger }

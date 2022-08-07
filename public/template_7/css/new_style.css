@@ -1,0 +1,284 @@
+/* Aqui los CSS */
+/* ==================== */
+/* scroll */
+.scroll_edit::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 7px;    /* Tamaño del scroll en horizontal */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.scroll_edit::-webkit-scrollbar-thumb {
+    background: var(--main-bg-color-primario);
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scroll_edit::-webkit-scrollbar-thumb:hover {
+    background: var(--main-bg-color-secundario);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.scroll_edit::-webkit-scrollbar-thumb:active {
+    background-color: var(--main-bg-color-secundario);
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.scroll_edit::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.scroll_edit::-webkit-scrollbar-track:hover,
+.scroll_edit::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+/* ============= */
+/* Fonts */
+@font-face {
+  font-family: TemplateFont;
+  src: url(/template_7/css/fonts/FtraBk.ttf);
+}
+.font-template {font-family: TemplateFont, serif;}
+/* ============= */
+/* Botones */
+.btn_1 {
+  border-radius: 25px!important;
+}
+.btn_2 {
+  background-color: var(--main-bg-color-secundario);
+  border-radius: 25px!important;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+.btn_2:hover {
+  background-color: var(--main-bg-color-cuarto);
+  color: #fff;
+}
+.btn_3 {
+  background: var(--main-bg-color-primario);
+  height: auto!important;
+  line-height: normal!important;
+  padding: 6px 20px;
+  margin-top: 18px;
+  border-radius: 9px;
+  color: #fff!important;
+}
+.btn_3:hover {
+  background: var(--main-bg-color-secundario);
+  color: #fff;
+}
+
+.btn_4 {
+  background: var(--main-bg-color-secundario);
+  height: auto!important;
+  line-height: normal!important;
+  padding: 6px 20px;
+  border-radius: 25px;
+  color: #fff!important;
+}
+.btn_4:hover {
+  background: var(--main-bg-color-primario);
+  color: #fff;
+}
+
+.client {
+    transition: filter .3s ease;
+}
+.client:not(:hover) {
+    filter: grayscale(1);
+    opacity: .5;
+}
+header.version_1 .main_nav ul.top_tools>li a.cart_bt strong {
+    background-color: #e98b3b;
+}
+@media (min-width: 992px) {
+  .nav_center {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .btn_sub {
+    position: absolute;
+    right: 30px;
+    top: -27px;
+  }
+}
+.marrieage_form {max-height: 600px;}
+@media (max-width: 576px) {
+  .marrieage_form {max-height: 1050px;}
+}
+/* nosotros */
+.description_about h2 {line-height: 0.8!important;}
+.history_desc {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1138px) {
+  .history_desc {padding: 30px 0px;}
+}
+
+/* productos */
+.brand_ribbon {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+}
+.brand_ribbon>img {
+    width: 64px!important;
+    height: 64px;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+/* Barra de menu de categorias */
+.category_item {
+  background: var(--main-bg-color-primario);
+  color: #fff;
+}
+.category_item:hover {
+  background: var(--main-bg-color-secundario);
+  /* color: #fff; */
+  color: #fff !important;
+}
+.category_img {
+  width: 25px!important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav_category > .owl-nav > .owl-prev,
+#nav_category > .owl-nav > .owl-next {
+  height: 100%;
+  width: 15px;
+  font-weight: 700;
+  font-size: 32px;
+  background: none!important;
+  border: none!important;
+  color: #fff;
+}
+
+#nav_category2 > .owl-nav > .owl-prev,
+#nav_category2 > .owl-nav > .owl-next {
+  height: 100%;
+  width: 15px;
+  font-weight: 700;
+  font-size: 32px;
+  background: none!important;
+  border: none!important;
+  color: #fff;
+}
+
+#nav_category3 > .owl-nav > .owl-prev,
+#nav_category3 > .owl-nav > .owl-next {
+  height: 100%;
+  width: 15px;
+  font-weight: 700;
+  font-size: 32px;
+  background: none!important;
+  border: none!important;
+  color: #fff;
+}
+
+#nav_category > .owl-stage-outer > .owl-stage > .owl-item:hover {
+  background: var(--main-bg-color-secundario)!important;
+}
+
+#nav_category2 > .owl-stage-outer > .owl-stage > .owl-item:hover {
+  background: var(--main-bg-color-secundario)!important;
+}
+
+#nav_category3 > .owl-stage-outer > .owl-stage > .owl-item:hover {
+  background: var(--main-bg-color-secundario)!important;
+}
+
+.logo_menu {
+  width: 160px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+#menu_routes {
+    /* position: absolute; */
+    width: 300px;
+    /* right: 0;
+    z-index: 1000;
+    transition: height 2s; */
+}
+#menu_routes a, #sign_menu a {
+    color: var(--main-bg-color-primario);
+    padding: 10px 20px;
+    height: auto;
+    line-height: normal;
+}
+#menu_routes a:hover, #sign_menu a:hover {
+    background: var(--main-bg-color-primario);
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+  .btn_3 {margin-top: 0px;}
+  .small-gutters {margin-bottom: 10px;}
+  .mm-sticky {padding-bottom: 0px!important;}
+  .desktop_header {display: none;}
+  .sm_none {display: none;}
+  .padding_we {padding-top: 80px;}
+}
+@media (min-width: 767px) {
+  .movil_header {display: none;}
+  .md_none {display: none;}
+}
+/* checkout */
+.total_checkout {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-bg-color-terciario);
+}
+
+.rest_checkout {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-bg-color-cuarto);
+}
+
+.club_background {
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.club_background2 {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+/* logistica */
+.ligistic_nav li {
+  display: inline;
+}
+.ligistic_nav li::before {
+  content: "\2192";
+  color: var(--main-bg-color-primario);
+  font-size: 50px;
+  vertical-align: -9px;
+}
+.ligistic_text {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bg-primary {background-color: var(--main-bg-color-primario)!important;}
+.bg-info {background-color: var(--main-bg-color-secundario)!important;}
+.bg-danger {background-color: #dc3545!important;}
+.bg-warning {background-color: #ffc107!important;}

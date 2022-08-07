@@ -1,0 +1,24 @@
+@include component('header-categories') {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: var(--header-height);
+  background-color: rgba(#000, .5);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-out;
+
+  @include element('container') {
+    left: 7.5%;
+    position: absolute;
+    background-color: $global-color-quinary;
+    width: 300px;
+  }
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

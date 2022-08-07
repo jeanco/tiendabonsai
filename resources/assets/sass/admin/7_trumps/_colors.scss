@@ -1,0 +1,5 @@
+@include utility('color-error') { color: $global-color-error }
+@include utility('color-primary') { color: $global-color-primary }
+@include utility('color-secondary') { color: $global-color-secondary }
+@include utility('color-tertiary') { color: $global-color-tertiary }
+@include utility('color-text') { color: $global-color-text }

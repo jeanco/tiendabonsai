@@ -1,0 +1,22 @@
+@include component('item-description') {
+
+  @include mq($from: laptop) {
+    display: grid;
+    // grid-template-columns: minmax(200px, 1fr) 256px 213px;
+    grid-template-columns: minmax(200px, 1fr) 300px 300px;
+    grid-column-gap: 27px;
+    width: 100%;
+    overflow: hidden;
+    align-items: stretch;
+
+    @include element('info') {
+      order: 2
+    }
+    @include element('images') {
+      order: 1;
+    }
+    @include element('prices') {
+      order: 3
+    }
+  }
+}

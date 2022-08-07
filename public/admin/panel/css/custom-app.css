@@ -1,0 +1,24 @@
+.notPaddingExtrems {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.notPointerEvent {
+  pointer-events: none;
+}
+
+.error-block {
+	color: red;
+}
+
+.width-user{width: 15%;}
+
+@media (max-width: 1200px){
+	.width-user{width: 30%;}
+}
+@media (max-width: 768px){
+	.width-user{width: 50%;}
+}
+@media (max-width: 576px){
+	.width-user{width: 100%;}
+}

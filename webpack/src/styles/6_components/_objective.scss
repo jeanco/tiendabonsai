@@ -1,0 +1,28 @@
+@include component('objective') {
+  color: white;
+  text-align: center;
+
+  @include element('content') {
+    display: flex;
+    justify-content: center;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @include mq($from: tablet) {
+    display: flex;
+    min-height: 100vh;
+    >* {
+      width: 50%;
+      max-width: 50%;
+      flex: 1;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}

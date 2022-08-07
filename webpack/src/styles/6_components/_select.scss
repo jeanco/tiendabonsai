@@ -1,0 +1,28 @@
+@include component('select') {
+  position: relative;
+  display: inline-flex;
+
+  >select {
+    padding: .5rem 2em .5rem .75rem;
+    border: 1px solid $global-border-color;
+    appearance: none;
+    // -moz-appearance: none;
+    // -ms-appearance: none;
+    // -webkit-appearance: none;
+    >option:hover {
+      background: red;
+      // box-shadow: 0 0 10px 100px #000 inset;
+    }
+
+
+    +.u-icon {
+      color: $global-color-text;
+      pointer-events: none;
+      position: absolute;
+      right: .85rem;
+      top: 50%;
+      font-size: 12px;
+      transform: translateY(-50%);
+    }
+  }
+}

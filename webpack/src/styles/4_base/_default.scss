@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-primary: #150092;
+  --bg-color-secondary: #6ebb51;
+  --bg-color-tertiary: #D8203C;
+  --bg-color-quaternary: #DCD200;
+  --bg-color-quinary: #f2f2f2;
+  --side-padding: 7.5%;
+  --header-height: 75px;
+  @include mq($until: tablet) {
+    --header-height: 50px
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  // &:hover {
+  //   text-decoration: underline;
+  // }
+}
+html {
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: $global-font-family;
+  color: $global-color-default;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+hr {
+  border-color: $global-border-color;
+  border-bottom-width: 0;
+  border-style: outset
+}
+
+input,
+button,
+select,
+textarea,
+a {
+  font-family: $global-font-family;
+  &:focus {
+    outline: 0
+  }
+}
+
+button {
+  cursor: pointer;
+}

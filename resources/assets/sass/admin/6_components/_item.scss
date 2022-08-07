@@ -1,0 +1,109 @@
+/*------------------------------------*\
+  #Item
+\*------------------------------------*/
+
+@include component('item') {
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px rgba($global-color-tertiary, .2);
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  justify-content: space-between;
+  margin: 0 auto 4rem auto;
+  max-width: 335px;
+  perspective: 1400px;
+  position: relative;
+  width: 100%;
+
+
+  @include element('wrapper') {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+
+
+  @include element('price') {
+    align-items: center;
+    background: $global-color-primary;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px;
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 80px;
+    justify-content: center;
+    position: absolute;
+    right: -1.5rem;
+    top: -1rem;
+    width: 80px;
+  }
+
+
+  @include element('image') {
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    height: 230px;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+
+  @include element('title') {
+    padding: .75rem;
+    padding-top: 1.5rem;
+    color: $global-color-primary;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+  }
+
+
+  @include element('btn') {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    width: 25%;
+    border: 0;
+    bottom: 0;
+  }
+
+  @include element('publish') {
+    border-radius: 0 0 0 8px;
+
+  }
+
+
+  @include element('delete') {
+    border-radius: 0 0 8px 0;
+
+  }
+
+  @include modifier('add') {
+    border: 2px dashed $global-color-primary;
+    background: none;
+    color: $global-color-primary;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 4rem
+    }
+  }
+}
+
+.objectfit .c-item__image img {
+  width: 100%;
+  object-fit: cover;
+}

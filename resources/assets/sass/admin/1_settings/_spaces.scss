@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #SPACES
+\*------------------------------------*/
+
+$global-space-1: 0.25rem !default;
+$global-space-2: 0.5rem !default;
+$global-space-3: 1rem !default;
+$global-space-4: 2rem !default;
+$global-space-5: 4rem !default;
+$global-space-6: 8rem !default;
+
+$wocss-spaces: (
+  '1': $global-space-1,
+  '2': $global-space-2,
+  '3': $global-space-3,
+  '4': $global-space-4,
+  '5': $global-space-5,
+  '6': $global-space-6
+) !default;

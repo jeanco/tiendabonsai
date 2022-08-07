@@ -1,0 +1,9 @@
+/*------------------------------------*\
+  #Type-Scale
+\*------------------------------------*/
+
+@each $fz-key, $fz-value in $wocss-font-sizes {
+  @include utility('fz-' + $fz-key) {
+    font-size: $fz-value;
+  }
+}

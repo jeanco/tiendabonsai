@@ -1,0 +1,36 @@
+/*------------------------------------*\
+  #Bootstrap Modals
+\*------------------------------------*/
+
+
+.modal {
+  padding-right: 0 !important
+}
+
+
+.modal-close {
+  background: none;
+  border: 0;
+  color: $global-color-error;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 4rem 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.control-label {
+  color: $global-color-tertiary;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: .75rem;
+  line-height: 1;
+  i {
+    color: $global-color-primary;
+    margin-right: .5rem
+  }
+}

@@ -1,0 +1,49 @@
+@include component('brand') {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+  @include element('image') {
+    height: 50px;
+    transition: all .3s ease;
+  }
+
+  @include element('content') {
+    &:not(:hover) {
+      >.c-brand__image {
+        filter: grayscale(1);
+        opacity: .5;
+      }
+
+      +.c-brand__tooltip {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+
+  &:hover {
+    z-index: 2;
+  }
+
+  @include element('tooltip') {
+    position: absolute;
+    background: white;
+    padding: .85rem 1.25rem;
+    border-radius: 7px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.219);
+    min-width: 240px;
+    transition: all .3s ease;
+    top: 130%;
+    z-index: 99;
+
+    >strong {
+      margin-bottom: 1.5rem;
+    }
+    >p {
+      margin-top: .25rem;
+      margin-bottom: .25rem;
+    }
+  }
+
+}

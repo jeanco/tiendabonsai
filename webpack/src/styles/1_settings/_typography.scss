@@ -1,0 +1,24 @@
+$global-font-family: 'Electrolux Sans', sans-serif;
+$font-family-secondary: 'Nunito', sans-serif;
+
+$global-fz-h00: 5rem;
+$global-fz-h0: 4.5rem;
+$global-fz-h1: 3.5rem;
+$global-fz-h2: 2.5rem;
+$global-fz-h3: 2rem;
+$global-fz-h4: 1.5rem;
+$global-fz-h5: 1.15rem;
+$global-fz-h6: 1rem;
+$global-fz-xs: .75rem;
+
+$wocss-font-sizes: (
+  'h00': $global-fz-h00,
+  'h0' : $global-fz-h0,
+  'h1' : $global-fz-h1,
+  'h2' : $global-fz-h2,
+  'h3' : $global-fz-h3,
+  'h4' : $global-fz-h4,
+  'h5' : $global-fz-h5,
+  'h6' : $global-fz-h6,
+  'xs' : $global-fz-xs
+);

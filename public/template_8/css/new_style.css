@@ -1,0 +1,589 @@
+/* Nuevos estilos */
+
+/* Fonts */
+/* ===== */
+
+/*============*/
+
+@font-face {font-family: "Hyundai Sans Head"; 
+src: url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.eot"); 
+src: url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.woff") format("woff"), url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/61ffb0b2f8ea8d9ca29bf6865856f4cd.svg#Hyundai Sans Head") format("svg"); 
+}
+
+@font-face {font-family: "Hyundai Sans Text KR Medium"; 
+src: url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.eot"); 
+src: url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7da8964eb5bfb640a6462a63ffb9c7ba.svg#Hyundai Sans Text KR Medium") format("svg"); 
+}
+
+@font-face {font-family: "Hyundai Sans Head Office"; 
+src: url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.eot"); 
+src: url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.woff") format("woff"), url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/146989febbb861929ea12fa23a8f3180.svg#Hyundai Sans Head Office") format("svg"); 
+}
+
+@font-face {font-family: "Hyundai Sans Text"; 
+src: url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.eot");
+ src: url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.woff") format("woff"), url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/5bab52d2b945c1aa19b539372d7f6b62.svg#Hyundai Sans Text") format("svg"); }
+
+@font-face {
+    font-family: "HyundaiSansHead";
+    src: url("/template_8/fonts/HyundaiSansHeadOffice-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HyundaiSansHead";
+    src: url("/template_8/fonts/HyundaiSansHeadOffice-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "HyundaiSansHead";
+    src: url("/template_8/fonts/HyundaiSansHeadOffice-Regular.ttf");
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "HyundaiSansHead";
+    src: url("/template_8/fonts/HyundaiSansHeadOffice-Bold.ttf");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+body {font-family: 'HyundaiSansHead', sans-serif!important;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'HyundaiSansHead', sans-serif;}
+p {font-family: 'HyundaiSansHead', sans-serif;}
+input, button, select, textarea {
+    font-family: 'HyundaiSansHead', sans-serif;
+}
+.text {font-family: 'HyundaiSansHead', sans-serif;}
+.sec-title h2 {font-family: 'HyundaiSansHead', sans-serif;}
+.main-footer .footer-bottom .copyright {font-family: 'HyundaiSansHead', sans-serif;}
+.styled-pagination li a {font-family: 'HyundaiSansHead', sans-serif;}
+.cars-form .form-group label {font-family: 'HyundaiSansHead', sans-serif;}
+.ui-widget.ui-widget-content {font-family: 'HyundaiSansHead', sans-serif;}
+.inventory-details .details-panel-box .panel-header h4 {font-family: 'HyundaiSansHead', sans-serif;}
+.list-style-seven {font-family: 'HyundaiSansHead', sans-serif;}
+.inventory-tabs .tab-buttons {font-family: 'HyundaiSansHead', sans-serif;}
+.list-style-nine {font-family: 'HyundaiSansHead', sans-serif;}
+.list-style-eight {font-family: 'HyundaiSansHead', sans-serif;}
+.social-icon-two li.share {font-family: 'HyundaiSansHead', sans-serif;}
+.sidebar .popular-posts .post .text {font-family: 'HyundaiSansHead', sans-serif;}
+
+/* Colores */
+/* ======= */
+a {color: var(--main-bg-color-primario);}
+
+.text_1 {color: var(--main-bg-color-primario);}
+.text_2 {color: var(--main-bg-color-secundario);}
+.text_3 {color: var(--main-bg-color-terciario);}
+.text_4 {color: var(--main-bg-color-cuarto);}
+.text_white {color: #fff!important;}
+
+.main-header .header-top .top-right .sell-car {
+  background: var(--main-bg-color-primario);
+  color: var(--main-bg-color-secundario);
+}
+.main-header .account .dropdown-menu > li > a:hover {
+  background: var(--main-bg-color-primario);
+  color: var(--main-bg-color-secundario);
+}
+.main-header .account .dropdown-menu {border-top: 2px solid var(--main-bg-color-secundario);}
+.main-header .dropdown-option li.account > a > .icon {color: var(--main-bg-color-secundario);}
+
+.header-upper .main-menu .navigation > li:hover > a,
+.header-upper .main-menu .navigation > li.current > a {color: var(--main-bg-color-secundario);}
+
+.header-upper .main-menu .navigation > li.current-menu-item > a,
+.info-block li .icon {
+  color: var(--main-bg-color-primario);
+}
+.btn-style-one {
+    background: var(--main-bg-color-primario);
+    border: 2px solid var(--main-bg-color-primario);
+    color: var(--main-bg-color-secundario);
+    font-family: 'HyundaiSansHead', sans-serif;
+}
+.main-slider .slider-content h2:before {
+  background-color: var(--main-bg-color-primario);
+  color: var(--main-bg-color-secundario);
+}
+.offer-section .owl-dots .owl-dot.active span, .offer-section .owl-dots .owl-dot:hover span {
+    background: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-secundario);
+    color: var(--main-bg-color-primario);
+}
+.sticky-header .main-menu .navigation > li:hover > a,
+.sticky-header .main-menu .navigation > li.current > a {
+  background: none;
+  color: var(--main-bg-color-secundario)!important;
+}
+.sticky-header .main-menu .navigation > li.current-menu-item > a {
+    background: var(--main-bg-color-primario);
+    color: var(--main-bg-color-secundario)!important;
+}
+
+.sec-title h2.blog_title:before  {background-color: var(--main-bg-color-secundario);}
+.sec-title h2:before, .offer-block .inner-box .lower-box .plus-box .tooltip-data {background-color: var(--main-bg-color-primario);}
+.offer-block .inner-box .lower-box ul li .icon {color: var(--main-bg-color-secundario);}
+.offer-block .inner-box .lower-box .plus-box:hover {
+    border-color: var(--main-bg-color-primario);
+    background-color: var(--main-bg-color-primario);
+    color: var(--main-bg-color-secundario);
+}
+.offer-block .inner-box .lower-box .plus-box .tooltip-data:after {border-top: 8px solid var(--main-bg-color-primario);}
+.offer-block .inner-box h3 a:hover {color: var(--main-bg-color-primario);}
+
+.news-block .inner-box:hover .lower-box {border-color: var(--main-bg-color-primario);}
+.scroll-to-top:hover {
+    background: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-primario);
+    color: var(--main-bg-color-secundario);
+}
+.main-header .header-top .top-left .social-links a:hover {color: var(--main-bg-color-secundario);}
+footer .btn-style-three {
+    color: var(--main-bg-color-secundario);
+    border: 2px solid var(--main-bg-color-secundario);
+    font-family: 'HyundaiSansHead', sans-serif;
+}
+footer .btn-style-three:hover,
+footer .social-icon-two a:hover {
+    color: var(--main-bg-color-primario);
+    background: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-secundario);
+}
+.footer-links li a:hover,
+.footer-links li a:hover::before,
+footer .list-style-one li .icon {color: var(--main-bg-color-secundario);}
+
+.main-footer .footer-bottom {background-color: var(--main-bg-color-terciario);}
+.main-footer:before {background-color: rgba(35,35,35,0.95);}
+
+.news-block-two .inner-box .lower-box .content .post-meta li .icon {color: var(--main-bg-color-primario);}
+.social-icon-two a:hover {
+    color: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-primario);
+    background-color: var(--main-bg-color-primario);
+}
+.sidebar-title h2:after {background-color: var(--main-bg-color-primario);}
+.sidebar .popular-posts .post-meta li .icon {color: var(--main-bg-color-primario);}
+.services-block-five .inner-box {border: 1px solid var(--main-bg-color-secundario);}
+.services-block-five .inner-box .overlay-box:before {background-color: var(--main-bg-color-primario);}
+.services-section-three .owl-dots .owl-dot.active span {
+    background: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-secundario);
+}
+.cars-form .form-group .reset-all {
+  color: var(--main-bg-color-primario);
+  font-family: 'HyundaiSansHead', sans-serif;
+}
+.styled-pagination li a:hover, .styled-pagination li a.active {
+    color: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-primario);
+    background-color: var(--main-bg-color-primario);
+}
+.car-block .inner-box h3 a:hover {color: var(--main-bg-color-primario);}
+.default-sidebar-title h2:after {background-color: var(--main-bg-color-primario);}
+
+.advantage-section .customer-column .inner-box .upper-box .icon,
+.advantage-section .customer-column .inner-box .lower-box .number,
+.advantage-section .theme_color {color: var(--main-bg-color-secundario);}
+
+.team-block .inner-box .content-column .content-inner .sub-title,
+.list-style-three li .icon {color: var(--main-bg-color-primario);}
+
+.team-section .owl-dots .owl-dot.active span, .team-section .owl-dots .owl-dot:hover span {
+    background: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-primario);
+}
+.team-section .owl-dots .owl-dot span {background: var(--main-bg-color-terciario);}
+.social-icon-one a:hover {
+    color: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-primario);
+    background-color: var(--main-bg-color-primario);
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    border-color: var(--main-bg-color-primario)!important;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea {border: 1px solid #848484;}
+
+.subscribe-form .form-group input {border: 1px solid #848484;}
+
+.subscribe-form .form-group input:focus {border: 1px solid var(--main-bg-color-primario);}
+
+.headquater-box .inner-box h2:after,
+.sales-department .inner-box h2:after {background-color: var(--main-bg-color-secundario);}
+
+.headquater-box .list-style-six li .icon,
+.department-author .inner-box .content ul li .icon {color: var(--main-bg-color-secundario);}
+
+.sales-department .inner-box .owl-dots .owl-dot.active,
+.sales-department .inner-box .owl-dots .owl-dot:hover {
+    background-color: var(--main-bg-color-secundario);
+    border-color: var(--main-bg-color-secundario);
+}
+.headquater-box .social-icon-four a:hover {
+    color: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-secundario);
+    background-color: var(--main-bg-color-secundario);
+}
+.list-style-eight li:before {color: var(--main-bg-color-primario);}
+.inventory-details .details-panel-box:hover .panel-header .panel-btn {
+    color: var(--main-bg-color-primario);
+}
+.inventory-tabs .tab-buttons .tab-btn.active-btn {
+    color: var(--main-bg-color-secundario);
+    background: var(--main-bg-color-primario);
+}
+.inventory-tabs .tab-buttons .tab-btn:after {border-left: 7px solid var(--main-bg-color-primario);}
+
+.listing-outer .offer-widget .widget-content .owl-dots .owl-dot.active,
+.listing-outer .offer-widget .widget-content .owl-dots .owl-dot:hover {
+    background-color: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-primario);
+}
+.list-style-nine li:before {color: var(--main-bg-color-primario);}
+
+.inventory-details .offer-box .offer-column .subtitle {
+  background: var(--main-bg-color-primario);
+  color: var(--main-bg-color-secundario);
+}
+.inventory-details .offer-box .offer-column .offer-info li h4 {color: var(--main-bg-color-primario);}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    background: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-primario);
+}
+
+/* Bontones */
+/* ======== */
+.btn_1 {
+    background: var(--main-bg-color-primario);
+    padding: 5px 10px;
+    font-weight: 700;
+    color: var(--main-bg-color-secundario);
+    transition: 0.5s;
+}
+.btn_1:hover {
+    background: var(--main-bg-color-terciario);
+    color: #fff;
+}
+.main-header .nav-outer .more-options .cart-box a.btn_1 {
+  color: var(--main-bg-color-secundario);
+  font-family: 'HyundaiSansHead', sans-serif;
+}
+
+.news-block .inner-box .lower-box .content h3 a:hover,
+.blog-cat li a:hover,
+.blog-cat li a:hover::before,
+.blog-cat li a:hover::after,
+.sidebar .popular-posts .post a:hover {color: var(--main-bg-color-primario);}
+
+
+/* Background */
+/* ========== */
+.bg_white {background: #fff;}
+.bg_1 {background: var(--main-bg-color-primario);}
+.bg_2 {background: var(--main-bg-color-secundario);}
+.bg_3 {background: var(--main-bg-color-terciario);}
+.bg_4 {background: var(--main-bg-color-cuarto);}
+
+/* Header */
+/* ====== */
+@media (max-width: 874px) {
+  #desktop_header {display: none;}
+}
+@media (min-width: 874px) {
+  #movil_header {display: none;}
+}
+@media only screen and (max-width: 767px){
+  .main-header .header-upper {margin-top: 0px;}
+  .main-header .header-upper .upper-inner {border-top: none;}
+  .main-header .logo-outer {
+      width: auto;
+      text-align: center;
+  }
+}
+
+.menu_movile {
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 280px;
+    transition: 0.5s;
+    z-index: 100;
+    left: -280px;
+}
+.menu_movile.active {left: 0px;}
+.icon_menu::before {
+    content: "\f0c9";
+    font-size: 1.3em;
+    font-family: FontAwesome;
+}
+.icon_menu.quit::before {
+    content: "\f00d";
+}
+
+
+.main-header .logo-outer {padding: 12px 0px;}
+.main-header .logo-outer img {width: 250px;}
+
+.sticky-header .logo {padding: 12px 0px;}
+.sticky-header .logo img {width: 240px;}
+
+@media (max-width: 915px) {
+  .main-header .logo-outer img {width: 200px;}
+  .sticky-header .logo img {width: 200px;}
+}
+
+@media (max-width: 420px) {
+  .main-header .logo-outer img {width: 150px!important;}
+  .sticky-header .logo img {width: 150px!important;}
+}
+
+.main-menu .navigation > li > a {
+  padding: 13px 0px;
+  color: rgba(255,255,255,0.58);
+  font-family: 'HyundaiSansHead', sans-serif;
+}
+.main-header .nav-outer .more-options .cart-box {border-left: none;}
+.main-header .header-upper .upper-inner {
+    border-left: none;
+    border-right: none;
+}
+.sticky-header {border-bottom: none;}
+.sticky-header .main-menu .navigation > li > a {color: rgba(255,255,255,0.58);}
+
+/* Banner */
+/* ===== */
+.uranus.tparrows {border-radius: 50%;}
+.main-slider .uranus.tparrows:hover {background-color: #0a0303b8;}
+.main-slider .uranus.tparrows:hover::before {color: var(--main-bg-color-secundario)!important;}
+.link_banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Models */
+/* ====== */
+.ribbon_model {
+    color: #fff;
+    position: absolute;
+    padding: 1px 16px;
+}
+.car-block .inner-box h3,
+.car-block .inner-box .lower-box {
+    text-align: center;
+    font-family: 'HyundaiSansHead', sans-serif;
+}
+.offer-block .inner-box .image .price {
+    font-size: 16px;
+    padding: 2px 10px;
+}
+.offer-section .owl-dots .owl-dot span {
+    background: none;
+    border: 1px solid var(--main-bg-color-secundario);
+}
+.offer-block .inner-box .image .bg_1 {background: var(--main-bg-color-primario)!important;}
+.offer-block .inner-box .image .bg_2 {background: var(--main-bg-color-secundario)!important;}
+.offer-block .inner-box .image .bg_3 {background: var(--main-bg-color-terciario)!important;}
+.offer-block .inner-box .image .bg_4 {background: var(--main-bg-color-cuarto)!important;}
+.btn_features {
+    background: var(--main-bg-color-primario);
+    border: 1px solid var(--main-bg-color-primario);
+    color: var(--main-bg-color-secundario);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn_features:hover {
+    background: var(--main-bg-color-terciario);
+    border: 1px solid var(--main-bg-color-terciario);
+    color: var(--main-bg-color-secundario);
+}
+
+/* Features & promotions models */
+/* ============================ */
+.offer-block .inner-box h3 {line-height: 1.2;}
+
+.offer-block .inner-box h3,
+.offer-block .inner-box .lower-box {
+  text-align: center;
+  font-family: 'HyundaiSansHead', sans-serif;
+}
+
+.slider_basic .offer-block, .brand_effect {transition: 0.5s;}
+.slider_basic .offer-block:hover, .brand_effect:hover {
+  transform:scale(1.05);
+  z-index: 3;
+}
+
+.brand_effect img:not(:hover) {
+    filter: grayscale(1);
+}
+
+.brand_slider .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.brand_slider .owl-carousel .caption {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .img_feature {height: 150px;}
+  .offer-block .inner-box h3 {min-height: 80px;}
+}
+
+.offer-block .inner-box .lower-box ul li {
+    color: var(--main-bg-color-secundario);
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+/* Blog */
+/* ==== */
+.blog_date {
+  color: #fff;
+  line-height: 1.2;
+  padding: 2px 12px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.news-block .inner-box .lower-box .content {
+    margin-left: 0;
+    margin-bottom: 0;
+    top: 0;
+}
+.news-block .inner-box .lower-box .content .author:before {
+  content: '\f0a9';
+  color: var(--main-bg-color-primario);
+}
+
+/* Cotizar */
+/* ======= */
+.div_border {
+    border: 1px solid #848484;
+    border-radius: 0.25em;
+}
+.quot_active {
+  border: 1px solid var(--main-bg-color-primario);
+  border-radius: 0.25em;
+}
+.quot_active span {
+  color: var(--main-bg-color-primario);
+  font-size: 16px;
+  font-weight: 700;
+}
+.select_quot {
+  color: #848484;
+  font-size: 16px;
+  font-weight: 700;
+}
+.select_quot:hover {color: var(--main-bg-color-primario);}
+.car_quot_title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #232628;
+    font-weight: 700;
+}
+.slider_quot .owl-prev{
+  position: absolute;
+  top: 45%;
+  left: -25px;
+ }
+.slider_quot .owl-next{
+  position: absolute;
+  top: 45%;
+  right: -25px;
+}
+.quot_terms {
+  color: var(--main-bg-color-primario);
+  font-weight: 700;
+}
+.terms_title {
+  color: var(--main-bg-color-primario);
+  font-weight: 700;
+}
+.modal-dialog-scrollable .modal-body {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+.quot_complete {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.bg_quot {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url('/template_8/images/hyundai/cotizar_bg.jpg');
+    /* padding-top: 0px; */
+}
+
+
+/* Servicios */
+/* ========= */
+.benefit_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2!important;
+  text-transform: uppercase;
+}
+
+.services-block-five .inner-box .content-box .text {font-size: 16px;}
+
+.services-section-three {background-color: var(--main-bg-color-terciario);}
+
+.benefit_info {color: var(--main-bg-color-terciario);}
+
+.benefit_info .modal-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services-block-five .inner-box {background-color: var(--main-bg-color-terciario);}
+
+/* Pegination */
+/* ========== */
+.styled-pagination li a {line-height: 40px;}
+.pagination > .disabled > span {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  height: 52px;
+  font-size: 18px;
+  min-width: 52px;
+  color: #232527;
+  font-weight: 600;
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid #f2f2f2;
+  text-transform: capitalize;
+}
+.pagination > li > span {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    height: 52px;
+    font-size: 18px;
+    min-width: 52px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    text-transform: capitalize;
+}
+
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:hover {
+    color: var(--main-bg-color-secundario);
+    background-color: var(--main-bg-color-primario);
+    border-color: var(--main-bg-color-primario);
+}

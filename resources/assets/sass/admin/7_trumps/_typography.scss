@@ -1,0 +1,105 @@
+@each $fw-key, $fw-value in $wocss-font-weights {
+  @include utility('fw-' + $fw-key) {
+    font-weight: $fw-value;
+  }
+}
+
+.u-fz-h00 {
+  @include from-to(md, lg) {
+    font-size: 3rem
+  }
+
+  @include from-to(sm, md) {
+    font-size: 2.5rem
+  }
+
+  @include to(sm) {
+    font-size: 2rem
+  }
+}
+
+
+.u-fz-h0 {
+  @include from-to(md, lg) {
+    font-size: 2.5rem
+  }
+
+  @include from-to(sm, md) {
+    font-size: 2rem
+  }
+
+  @include to(sm) {
+    font-size: 1.75rem
+  }
+}
+
+
+.u-fz-h1 {
+  @include from-to(md, lg) {
+    font-size: 2rem
+  }
+
+  @include from-to(sm, md) {
+    font-size: 1.75rem
+  }
+
+  @include to(sm) {
+    font-size: 1.5rem
+  }
+}
+
+
+.u-fz-h2 {
+  @include from-to(md, lg) {
+    font-size: 1.75rem
+  }
+
+  @include from-to(sm, md) {
+    font-size: 1.5rem
+  }
+
+  @include to(sm) {
+    font-size: 1.4rem
+  }
+}
+
+
+.u-fz-h3 {
+  @include to(md) {
+    font-size: 1.25rem
+  }
+}
+
+
+.u-fz-h4 {
+  @include to(lg) {
+    font-size: 1rem
+  }
+}
+
+
+.u-fz-h5 {
+  @include from-to(md, lg) {
+    font-size: 1rem
+  }
+
+  @include to(md) {
+    font-size: .95rem
+  }
+}
+
+@include utility('line-height-1') { line-height: 1 }
+
+@include utility('italic') { font-style: italic }
+
+@include utility('capitalize') { text-transform: capitalize }
+@include utility('lowercase') { text-transform: lowercase }
+@include utility('uppercase') { text-transform: uppercase }
+
+@include utility('left-align') { text-align: left }
+@include utility('center') { text-align: center }
+@include utility('right-align') { text-align: right }
+@include utility('justify') { text-align: justify }
+
+
+@include utility('line-1') { line-height: 1 }

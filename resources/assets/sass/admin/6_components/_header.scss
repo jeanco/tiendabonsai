@@ -1,0 +1,144 @@
+/*------------------------------------*\
+  #Header
+\*------------------------------------*/
+
+
+@include component('header') {
+  display: flex;
+  height: 60px;
+
+  a {
+    align-items: center;
+    color: white;
+    display: flex;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    list-style: none;
+    font-weight: bold;
+  }
+
+
+  @include element('link') {
+    height: 100%;
+
+    a {
+      align-items: center;
+      color: white !important;
+      display: flex !important;
+      font-size: 1.6rem;
+      height: 100%;
+      padding: 1rem 3rem !important;
+
+      @include to(md) {
+        padding: 1rem 1.25rem !important;
+      }
+    }
+
+    &.active a {
+      background: darken($global-color-primary, 5%) !important;
+    }
+  }
+
+
+  @include element('logo') {
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid $global-color-primary;
+    display: flex;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: center;
+
+    @include to(lg) {
+      padding: 0 1rem;
+    }
+  }
+
+
+  @include element('logo-image') {
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+  }
+
+
+  @include element('nav') {
+    align-items: center;
+    background-color: $global-color-primary;
+    display: flex;
+    flex: 1;
+    height: 60px;
+    justify-content: space-between;
+
+    li a {
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+
+      &:hover{
+        background-color: darken($global-color-primary, 5%);
+        color: white;
+        text-decoration: none
+      }
+
+      &:focus {
+        background-color: $global-color-primary;
+        color: white;
+        text-decoration: none
+      }
+    }
+  }
+
+
+  @include element('user') {
+    height: 100%;
+
+    .dropdown-toggle{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 1rem 2rem;
+      background: none;
+      border: 0;
+      color: white;
+
+      figure {
+        width: 36px;
+        border-radius: 50%;
+        background-color: white;
+        height: 36px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        max-width: none;
+        max-height: 100%;
+      }
+
+      span {
+        margin-left: .75rem;
+      }
+    }
+  }
+}
+
+
+.dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+
+.u-flex--header {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}

@@ -1,0 +1,10 @@
+@include component('order') {
+  @include element('subtitle') {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $global-border-color;
+    margin-top: 0;
+    color: $global-color-primary
+  }
+}

@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #Bootstrap Toogle
+\*------------------------------------*/
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: $global-color-primary;
+  border-color: darken($global-color-primary, 10%);
+}
+
+
+.toggle {
+  width: 150px !important;
+}

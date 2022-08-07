@@ -1,0 +1,99 @@
+@include component('footer') {
+  background-color: $global-color-primary;
+  padding-top: 2rem;
+
+  @include mq($from: laptop) {
+    // padding-top: 3rem;
+  }
+
+  @include element('info') {
+    // flex-direction: column;
+    border-top: 1px solid $global-color-text;
+    border-bottom: 1px solid $global-color-text;
+
+    @include mq($from: laptop) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      justify-content: space-around;
+      display: flex;
+    }
+  }
+
+  @include element('info-item') {
+    color: white;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @include element('info-icon') {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: $global-color-secondary
+  }
+
+  @include element('info-content') {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    >* {
+      font-style: normal;
+      display: block;
+      &:first-child {
+        font-weight: bold;
+        font-size: 1.1rem;
+        line-height: 1;
+
+        @include mq($from: tablet) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @include element('logo') {
+    max-width: 200px;
+  }
+
+  @include element('nav') {
+    display: grid;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+
+  @include element('link') {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 2px;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+
+  @include element('list') {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include mq($until: tablet) {
+      text-align: center;
+    }
+  }
+
+  @include element('list-item') {
+    color: white;
+    margin-bottom: .5rem;
+
+
+    &:first-child {
+      font-size: 1.1rem;
+      margin-bottom: .55rem;
+      font-weight: bold;
+    }
+  }
+}

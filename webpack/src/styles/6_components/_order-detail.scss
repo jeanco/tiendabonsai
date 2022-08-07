@@ -1,0 +1,130 @@
+@include component('order-detail') {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  align-items: flex-start;
+
+  @include mq($from: tablet) {
+    display: flex;
+  }
+
+  @include element('cart') {
+    flex: 1;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    >table {
+      width: 100%;
+      th {
+        text-transform: uppercase;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        &:first-child {
+          text-align: left;
+        }
+      }
+
+      td {
+        padding: .5rem 1rem;
+        &:last-child {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    @include mq($from: tablet) {
+      margin-right: 3rem;
+      margin-bottom: 0;
+    }
+  }
+
+
+  @include element('cart-link') {
+    text-decoration: none;
+    color: $global-color-default;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include element('cart-image') {
+    $size: 80px;
+    height: $size;
+    width: $size;
+    margin-right: 1rem;
+    text-align: center;
+    >img {
+      // width: 100%;
+      // height: 100%;
+      // object-fit: cover;
+      max-height: 100%;
+    }
+  }
+
+  @include element('summary') {
+    // width: 320px;
+    width: 370px;
+    background: $global-color-quinary;
+    padding: 1rem;
+    text-align: center;
+    max-width: 100%;
+
+  }
+
+  @include element('summary-table') {
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    >caption {
+      padding-bottom: .35rem;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      border-bottom: 1px dashed $global-border-color;
+    }
+
+    >tfoot {
+      border-top: 1px dashed $global-border-color;
+      border-bottom: 1px dashed $global-border-color;
+      td {
+        // padding-top: .5rem;
+        padding-bottom: .25rem;
+      }
+      tr:first-child {
+        td {
+          padding-top: .5rem;
+        }
+      }
+
+      tr:last-child {
+        td {
+          padding-bottom: .5rem;
+        }
+      }
+    }
+
+    >tbody {
+      td {
+        padding-bottom: .25rem;
+      }
+      tr:first-child {
+        td {
+          padding-top: .5rem;
+        }
+      }
+      tr:last-child {
+        td {
+          padding-bottom: .5rem;
+        }
+      }
+    }
+  }
+}

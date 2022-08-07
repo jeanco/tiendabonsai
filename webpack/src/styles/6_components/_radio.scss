@@ -1,0 +1,51 @@
+@include component('radio') {
+  >input[type='radio'] {
+    display: none;
+    width: 0;
+    height: 0;
+
+    &:checked+.c-radio__label:after {
+      // opacity: 1;
+      background-color: $global-color-success;
+    }
+  }
+
+  @include element('label') {
+    $box-size: 17px;
+    user-select: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      cursor: pointer;
+    }
+
+    &:before {
+      display: inline-block;
+      height: $box-size;
+      width: $box-size;
+      margin-right: 0.35rem;
+      border: 1px solid $global-border-color;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    &:after {
+      top: 0;
+      left: 0;
+      width: $box-size;
+      border: 1px solid transparent;
+      padding: $box-size / 4.86;
+      height: $box-size;
+      border-radius: 50%;
+      position: absolute;
+      background-clip: content-box;
+      transition: background .2s linear;
+
+    }
+  }
+}

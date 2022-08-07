@@ -1,0 +1,18 @@
+@include utility('flex') { display: flex }
+@include utility('flex-1') { flex: 1 }
+
+@include utility('flex-column') { flex-direction: column }
+@include utility('flex-row') { flex-direction: row }
+@include utility('flex-wrap') { flex-wrap: wrap }
+
+@include utility('items-baseline') { align-items: baseline }
+@include utility('items-center') { align-items: center }
+@include utility('items-end') { align-items: flex-end }
+@include utility('items-start') { align-items: flex-start }
+@include utility('items-stretch') { align-items: stretch }
+
+@include utility('justify-around') { justify-content: space-around }
+@include utility('justify-between') { justify-content: space-between }
+@include utility('justify-center') { justify-content: center }
+@include utility('justify-end') { justify-content: flex-end }
+@include utility('justify-start') { justify-content: flex-start }

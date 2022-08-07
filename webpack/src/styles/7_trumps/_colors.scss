@@ -1,0 +1,4 @@
+@include utility('color-text') {color: $global-color-text}
+@include utility('color-quaternary') {color: $global-color-quaternary}
+@include utility('color-quinary') {color: $global-color-quinary}
+@include utility('color-default') {color: $global-color-default}

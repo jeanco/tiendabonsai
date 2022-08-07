@@ -1,0 +1,32 @@
+@include component('question') {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid rgba($global-border-color, .5);
+  list-style-position: inside;
+
+  @include element('text') {
+    padding-left: 1rem;
+    transition: color .3s ease;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  @include element('answer') {
+    font-weight: normal;
+    padding-left: 2rem;
+    color: $global-color-text;
+    max-height: 0;
+    transition: all .3s ease;
+    overflow: hidden;
+  }
+
+
+  &.is-active {
+    color: $global-color-primary;
+    .c-question__answer {
+      margin-top: 1rem;
+      max-height: 100vh;
+    }
+  }
+}

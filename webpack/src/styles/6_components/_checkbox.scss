@@ -1,0 +1,50 @@
+@include component('checkbox') {
+  display: block;
+
+  >input[type='checkbox'] {
+    display: none;
+    width: 0;
+    height: 0;
+
+    &:checked+.c-checkbox__label:after {
+      opacity: 1;
+    }
+  }
+
+  @include element('label') {
+    $box-size: 17px;
+    user-select: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      cursor: pointer;
+    }
+
+    &:before {
+      display: inline-block;
+      height: $box-size;
+      width: $box-size;
+      margin-right: 0.35rem;
+      border: 1px solid $global-border-color;
+      background-color: white;
+    }
+
+    &:after {
+      top: 1px;
+      left: $box-size / 2 - 3px;
+      width: $box-size / 3;
+      height: $box-size - 5px;
+      border: solid $global-color-success;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      position: absolute;
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+  }
+}

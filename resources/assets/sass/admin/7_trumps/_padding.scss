@@ -1,0 +1,36 @@
+/*------------------------------------*\
+  #PADDING
+\*------------------------------------*/
+
+@each $space-number, $space-value in $wocss-spaces {
+  @include utility('p' + $space-number) { padding: $space-value; }
+  @include utility('pt' + $space-number) { padding-top: $space-value; }
+  @include utility('pr' + $space-number) { padding-right: $space-value; }
+  @include utility('pb' + $space-number) { padding-bottom: $space-value; }
+  @include utility('pl' + $space-number) { padding-left: $space-value; }
+
+  @include utility('py' + $space-number) {
+    padding-top:    $space-value;
+    padding-bottom: $space-value;
+  }
+  @include utility('px' + $space-number) {
+    padding-left:  $space-value;
+    padding-right: $space-value;
+  }
+}
+
+@include utility('py0') {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+@include utility('px0') {
+  padding-left: 0;
+  padding-right: 0
+}
+
+@include utility('p0') { padding: 0; }
+@include utility('pt0') { padding-top: 0; }
+@include utility('pr0') { padding-right: 0; }
+@include utility('pb0') { padding-bottom: 0; }
+@include utility('pl0') { padding-left: 0; }

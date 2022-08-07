@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #Loading
+\*------------------------------------*/
+
+@include component('loading') {
+  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $global-color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include element('text') {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+  }
+}
+

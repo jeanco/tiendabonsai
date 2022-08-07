@@ -1,0 +1,215 @@
+/*------------------------------------*\
+  #Sub Header
+\*------------------------------------*/
+
+@include component('sub-header') {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  position: absolute;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  li {
+    list-style: none;
+  }
+
+  &.is-fixed {
+    box-shadow: 0 1px 6px 1px rgba($global-color-tertiary, 0.5);
+    position: fixed;
+  }
+
+  @mixin onHover {
+    .c-categories {
+      visibility: visible;
+    }
+
+    .c-sub-header__categories-button {
+      &::before {
+        display: block;
+      }
+    }
+  }
+
+
+  @include element('categories') {
+    flex: none;
+
+    &:hover, &.is-active {
+      @include onHover();
+    }
+  }
+
+  @include element('categories-button') {
+    background: white;
+    border-right: 1px solid rgba($global-color-tertiary, .25);
+    border: 0;
+    color: $global-color-tertiary;
+    height: 60px;
+    outline: none;
+    padding: 0 3.5rem 0 2.5rem;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      border-left: 7.5px solid transparent;
+      border-right: 7.5px solid transparent;
+      border-top: 7px solid white;
+      content: '';
+      display: none;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+      width: 0;
+      z-index: 2;
+    }
+
+    &::after {
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 7px solid;
+      content: '';
+      height: 0;
+      margin-left: .5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+    }
+
+    @include to(sm) {
+      padding: 0 2rem 0 1rem;
+    }
+  }
+
+
+  @include element('link') {
+    &.active {
+      background: darken($global-color-primary, 10%)
+    }
+  }
+
+
+  @include element('delete') {
+    color: white;
+    cursor: pointer;
+    font-size: 2.25rem !important;
+    position: absolute;
+    right: .7em;
+    top: .7em;
+  }
+
+
+  @include element('search') {
+    background: white;
+    border: 0;
+    color: $global-color-secondary;
+    display: flex;
+    flex: 1;
+    height: 60px;
+    max-width: 600px;
+    position: relative;
+
+    i {
+      align-items: center;
+      display: flex;
+      font-size: 1.3rem;
+      pointer-events: none;
+      position: absolute;height: 100%;
+      right: 20px;
+
+      @include to(sm) {
+        right: 10px;
+      }
+    }
+
+    input {
+      border: 0;
+      outline: 0;
+      padding-left: 2rem;
+      padding-right: 3rem;
+      width: 100%;
+
+      &:focus {
+        border: 0 !important;
+      }
+
+      @include to(sm) {
+        padding: 0 2rem 0 .75rem;
+      }
+    }
+  }
+
+  @include element('item') {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2.25rem 4rem;
+    transition: background-color .5s ease;
+
+    figure {
+      align-items: center;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      width: 100px;
+    }
+
+
+    img {
+      height: 100%;
+      transform-style: flat !important;
+      width: auto !important;
+    }
+
+
+    span {
+      color: white;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+
+    &:hover {
+      background: darken($global-color-primary, 10%);
+      text-decoration: none;
+    }
+  }
+
+  @include element('edit') {
+    .btn {
+      padding: 8px 14px;
+    }
+  }
+
+  @include state('active') {
+    @include onHover();
+  }
+
+  @include modifier('add') {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 5rem;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      background: darken($global-color-primary, 10%);
+      text-decoration: none;
+    }
+  }
+}

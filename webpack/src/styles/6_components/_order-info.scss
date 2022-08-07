@@ -1,0 +1,31 @@
+@include component('order-info') {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  align-items: flex-start;
+  @include mq($from: laptop) {
+    display: flex;
+  }
+
+  @include element('form') {
+    flex: 1;
+
+    @include mq($until: laptop) {
+      margin-bottom: 2rem;
+    }
+
+    @include mq($from: tablet) {
+      margin-right: 2rem;
+    }
+  }
+
+  @include element('payments') {
+    flex: 1;
+    @include mq($until: laptop) {
+      margin-bottom: 2rem;
+    }
+
+    @include mq($from: laptop) {
+      margin-right: 2rem;
+    }
+  }
+}

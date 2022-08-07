@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  Custom scroll
+\*------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 10px; // width scroll y
+  height: 7px;
+  background: $global-color-quinary;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: lighten($global-color-quinary, 30%); // border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: lighten($global-color-quinary, 30%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $global-color-primary;
+  border-radius: 3px;
+  &:hover {
+    background-color: darken($global-color-primary, 10%);
+  }
+  &:active {
+    background-color: darken($global-color-primary, 5%);
+  }
+  &:window-inactive {
+    background-color: lighten($global-color-primary, 10%);
+  }
+}
+

@@ -1,0 +1,12 @@
+@include utility('border-error') {border-color: $global-color-error}
+@include utility('border-primary') {border-color: $global-color-primary}
+@include utility('border-secondary') {border-color: $global-color-secondary}
+// @include utility('border-bottom') {border-bottom: 1px solid $global-border-color}
+
+@include utility('border-bottom-dashed') {
+  border-bottom-style: dashed;
+}
+
+@include utility('br2') {
+  border-radius: 8px
+}
